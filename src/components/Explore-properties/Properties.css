@@ -1,0 +1,164 @@
+.Eplore-property {
+    padding: 3rem 0;
+
+}
+.bg-light-color{background: #515C77; }
+.explore-card {
+    background: #fff;
+    border-radius: 8px;
+}
+.explore-card figure img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 260px;
+}
+.explore-card figure {margin-bottom: 0;}
+
+.explore-heading h5 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #00BE13;
+}
+.explore-heading h6 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #212A41;
+}
+.explore-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0;
+}
+.explore-middle-content {
+    padding: 0 1.5rem;
+}
+.expolore-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #212A41;
+}
+span.icon-bg {
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    background: #E9EBF2;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+ul.conetnt-listing li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #212A41;
+    font-weight: 500;
+}
+.explore-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F1F4FB;
+    padding: 1.5rem;
+    margin: 1rem 0 0;
+    align-items: center;
+}
+.explore-footer p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #212A41;
+    margin-bottom: 0;
+}
+.explore-footer .view-btn {
+    height: 40px;
+    background-color: #212A41;
+    border-radius: 8px;
+    color: #fff;
+    border: 0;
+    font-weight:500;
+    font-size: 17px;
+    width: auto;
+    padding: 0 50px;
+}
+.explore-footer .view-btn:hover {
+	background:#030718;
+}
+ul.conetnt-listing {
+    padding: 0;
+    margin: 1rem 0;
+}
+  h3.white-heading,   p.white-title {
+	color: #fff;
+}
+.explore-footer p img {
+    margin-right: 5px;
+}
+
+.card-top-space{
+    padding-top: 3rem;
+}
+.browse-category {
+    text-align: center;
+    padding-top: 3rem;
+}
+.browse-btn {
+    background: #030718;
+    border-radius: 4px;
+    border: 0;
+    width: auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    height: 52px;
+    padding: 0 28px;
+}
+.browse-btn:hover, button:hover {
+	background: #212a41;
+    cursor: pointer;
+}
+@media only screen and (min-width:992px) and (max-width:1370px){
+.explore-header {padding: 1.5rem 1rem 0;}
+.explore-middle-content {padding: 0 1rem;}
+.explore-footer button.ant-btn.ant-btn-default.view-btn {font-size: 15px;width: auto;padding: 0 23px;}
+.explore-footer {padding: 1.5rem 1rem;margin: 0;}
+ul.conetnt-listing {padding: 0;margin: 1rem 0 0;}
+.expolore-price {font-size: 20px;}
+ul.conetnt-listing li { margin-bottom: 0.6rem;}
+.Eplore-property {
+    padding: 1rem 0 2.5rem;
+}
+
+}
+
+
+
+@media (max-width:767px){
+
+.Eplore-property {padding: 1rem 0 1.5rem;}
+.ant-page-header-content h3 {font-weight: 500;font-size: 24px;}
+h3.white-heading, p.white-title {max-width: 100%;}
+ul.conetnt-listing li {margin-right: 0.5rem;}
+span.icon-bg { margin-right: 5px;}
+.explore-footer {padding: 1rem 1.5rem;margin: 1rem 0 0;align-items: baseline;flex-direction: column-reverse;}
+.explore-footer button.ant-btn.ant-btn-default.view-btn {margin-top: 1rem;}
+.browse-category { padding-top: 1.5rem;}
+.card-top-space {
+    padding-top: 1rem;
+}
+
+.section-tbm-space {
+    padding: 0.5rem 0  2rem;
+}
+}

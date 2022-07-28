@@ -1,0 +1,89 @@
+.customer-card {
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+}
+.customer-card .explore-body {
+    display: flex;
+}
+.customer-card .explore-header {
+    display: block;
+    padding: 0;
+    margin-left: 1.5rem;
+}
+.customer-card .explore-body .explore-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-body figure img {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.explore-body figure {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+.customer-card .expolore-price p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #030718;
+}
+.section-tbm-space {
+    padding:5rem 0 6.5rem ;
+}
+.customer-card .review-title h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.customer-card .review-title h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #515C77;
+}
+
+.customer-card .expolore-price {
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width:992px) and (max-width:1299px){
+.customer-card {padding: 2rem 1rem;}
+.customer-card .review-title h5 {font-size: 16px;}
+.section-tbm-space {
+    padding: 2rem 0 4rem;
+}
+
+}
+
+
+
+
+
+@media (max-width:767px){
+.customer-card .explore-body {
+    display: flex;
+    flex-direction: column;
+}
+.customer-card .explore-header { margin-left: 0;}
+.customer-card .explore-body .explore-heading {
+    margin: 1rem  0 0;
+}
+.customer-card .expolore-price {
+    margin-top: 0.5rem;
+}
+.section-tbm-space {
+    padding: 0 0 2rem;
+}
+}

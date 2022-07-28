@@ -1,0 +1,74 @@
+.pricing-cards {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 1rem 1rem 3rem;
+    margin-bottom: 1rem;
+}
+.Pricing-card {
+    padding: 2rem 0 3rem;
+}
+.price-header {
+    background: #030718;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2rem;
+}
+ul.feature-list {
+    padding: 0;
+    margin: 1rem 0;
+}
+ul.feature-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #D9D9D9;;
+    padding: 1rem 0;
+}
+ul.feature-list li:last-child {
+    border: 0;
+}
+.price-header h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+span.currency-symbol {
+    font-weight: 500;
+    font-size: 24px;
+    vertical-align: super;
+    position: relative;
+    left: 12px;
+}
+.price-footer {
+    text-align: center;
+}
+ul.feature-list li p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #515C77;
+}
+
+.ant-col.ant-col-8:nth-child(2) .pricing-cards .price-header {
+   background: #515C77;
+}
+.ant-col.ant-col-8:nth-child(2) .pricing-cards .price-footer button{
+    background: #515C77; 
+}
+.ant-col.ant-col-8:nth-child(3) .pricing-cards .price-header {
+    background: #E9EBF2;
+}
+.ant-col.ant-col-8:nth-child(3) .pricing-cards .price-footer button {
+    background: #E9EBF2;
+    color: #000;
+}
+.ant-col.ant-col-8:nth-child(3) .pricing-cards .price-header h2, .ant-col.ant-col-8:nth-child(3) .pricing-cards .price-header h3 {color: #000;}
+
+@media (max-width:767px){
+.Pricing-card {
+    padding: 0 0 1rem;
+}
+}

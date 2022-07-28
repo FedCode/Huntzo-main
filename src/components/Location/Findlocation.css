@@ -1,0 +1,21 @@
+.white-bg-color {
+    background: #fff;
+}
+.find-location-card {
+    border: 1px solid #E3E6F0;
+    border-radius: 8px;
+}
+.find-location-card .explore-body {
+    padding: 1.5rem;
+}
+.find-location-card .explore-header{padding: 0;}
+.find-location-card .explore-heading h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #030718;
+}
+.find-location-card .explore-heading  h6 {
+    text-align: center;
+}

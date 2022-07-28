@@ -1,0 +1,140 @@
+
+.how-it-works {
+	padding:1rem 0px 4rem;
+}
+.how-it-works .site-page-header {
+	text-align: center;
+	background-color: #fff;
+}
+.ant-page-header-content h3 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: capitalize;
+	color: #343D4F;
+    text-align: center;
+}
+.ant-page-header-content p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #000000;
+	max-width: 45%;
+	margin: 0 auto;
+    text-align: center;
+}
+h3.grey-heading {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: capitalize;
+	color: #343D4F;
+    text-align: center;
+}
+ p.grey-title {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #000000;
+	max-width: 45%;
+	margin: 0 auto;
+    text-align: center;
+}
+.work-list-card {
+	background: #fff;
+	padding-top: 5rem;
+}
+.single-card {
+	width: 349px;
+	min-height: 290px;
+    background: #FFFFFF;
+	border: 1px solid #515C77;
+	border-radius: 70px 8px 40px;
+    text-align: center;
+    padding:1rem;
+	margin: 0 auto;
+position: relative;
+}
+.box-id {
+	text-align: center;
+	width: 83px;
+	position: absolute;
+	left: 0;
+	background: rgb(81, 92, 119);
+	height: 66px;
+	top: 0;
+	border-radius: 100px 0;
+
+}
+.box-id small {
+	font-size: 15px;
+	color: #fff;
+	line-height: 58px;
+}
+.card-details h3 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: capitalize;
+	color: #343D4F;
+	margin: 1.2rem 0;
+}
+.card-details p {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: capitalize;
+	color: #000000;
+}
+
+.single-card::after {
+	content: "";
+	position: absolute;
+	right: -118px;
+	top: 50%;
+	background-image: url(./images/afterimg.svg);
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+}
+.section-conatiner .ant-col.ant-col-8:nth-child(2) .single-card::after {
+	
+	transform: rotate(180deg);
+	left: 99%;
+	top: 24%;
+}
+.section-conatiner .ant-col.ant-col-8:nth-child(3) .single-card::after{
+	display: none;
+}
+.section-conatiner {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+@media only screen and (min-width:992px) and (max-width:1370px){
+ul.conetnt-listing li {margin-right: 0.5rem;}
+.slide-main {padding: 0 1rem;}
+.how-it-works {padding: 1rem 0px 1rem;}
+.section-conatiner {padding: 0 2rem;}
+.content-card h2 {font-size: 43px;line-height: 47px;max-width: 80%;margin-left: auto;}
+.content-card h4 {font-size: 22px;margin-left: auto;max-width: 70%;}
+.work-list-card {padding: 3rem 1.5rem;}
+.single-card {width: auto;margin: 0 15px;}
+span.icon-bg { margin-right: 0.5rem;}
+.explore-middle-content {padding: 0 1rem;}
+
+
+}
+@media (max-width:767px){
+.single-card::after{display: none;}
+p.grey-title {max-width: 100%;}
+.single-card {width:100%;margin-bottom: 1rem;}
+.section-conatiner {padding: 0 1rem;}
+.work-list-card { padding-top: 2rem;}
+.how-it-works { padding: 1rem 0px 2rem;}
+h3.grey-heading {font-weight: 500;font-size: 24px;}
+
+}
