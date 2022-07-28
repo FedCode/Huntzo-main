@@ -91,7 +91,7 @@ const [pricingdata, setpricingdata] = useState(PricingData);
                                             </ul>
                                         </div>
                                         <div className='price-footer'>
-                                            <Button className='choose-plan-btn browse-btn'>{buttontext}</Button>
+                                            <button className='choose-plan-btn browse-btn'>{buttontext}</button>
                                         </div>
                                     </div>
                                </Col>
