@@ -8,6 +8,8 @@ import applestore from '../../assets/images/App-store.svg';
 import facebookicon from '../../assets/images/facebook-logo1.svg';
 import twitericon from '../../assets/images/TwitterLogo.svg';
 import instagramicon from '../../assets/images/instagram-icon.svg';
+import { Typography } from 'antd';
+const {Title} =Typography;
 
  const Bootom = () => {
   return (
@@ -15,7 +17,7 @@ import instagramicon from '../../assets/images/instagram-icon.svg';
        <Layout className="">
         <Row className='desktop-padding padd-top'>
        <Col span={12} xs={24} md={12} >
-        <h3>want to become a real estate agent?</h3>
+        <Title level={3}>want to become a real estate agent?</Title>
        <p>we’ll help you to grow your careere and growth</p>
        </Col>
        <Col span={12} justify="end" className='signup-btn-card' >
@@ -33,7 +35,8 @@ import instagramicon from '../../assets/images/instagram-icon.svg';
           </div>
         </Col>
         <Col span={4} xs={24} md={4}>
-          <h4>navigations</h4>
+          
+          <Title level={4}>navigations</Title>
           <List itemLayout="vertical ">
             <List.Item.Meta title={<a href="https://ant.design">About us</a>}/>
             <List.Item.Meta title={<a href="https://ant.design">faqs</a>}/>
@@ -42,7 +45,7 @@ import instagramicon from '../../assets/images/instagram-icon.svg';
          </List>
         </Col>
         <Col span={4} xs={24} md={4}>
-        <h4>the highlights</h4>
+        <Title level={4}>the highlights</Title>
         <List itemLayout="vertical ">
             <List.Item.Meta title={<a href="">apartment</a>}/>
             <List.Item.Meta title={<a href="">my houses</a>}/>
@@ -51,7 +54,7 @@ import instagramicon from '../../assets/images/instagram-icon.svg';
          </List>
         </Col>
         <Col span={4} xs={24} md={4}>
-        <h4>agent & agency</h4>
+         <Title level={4}>agent & agency</Title>
          <List itemLayout="vertical ">
             <List.Item.Meta title={<a href="">agency list</a>}/>
             <List.Item.Meta title={<a href="">agency details</a>}/>
@@ -61,12 +64,11 @@ import instagramicon from '../../assets/images/instagram-icon.svg';
         </Col>
         <Col span={1}></Col>
         <Col span={4} xs={24} md={4}>
-        <h4>download apps</h4>
+        <Title level={4}>download apps</Title>
        <div className='footer-app-store'>
-       <img src={googlepay} alt='' style={{margin:' 0 0 1.5rem'}}/>
-        <img src={applestore} alt='' />
-       </div>
-     
+        <img src={googlepay} alt='' style={{margin:' 0 0 1.5rem'}}/>
+          <img src={applestore} alt='' />
+        </div>
         </Col>
 
        </Row>

@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
-import { PageHeader, Layout, Col, Row, Button, List } from 'antd';
+import { PageHeader, Layout, Col, Row, Button, Card } from 'antd';
 import locimage from '../../assets/images/Location-img.png' ;
 import arrowright from '../../assets/images/arrow-right.svg' ;
 import './Findlocation.css'
+import { Typography } from 'antd';
+
+const { Title } = Typography;
 
 const LocationData = [
     { 
@@ -57,6 +60,7 @@ const LocationData = [
  
  ]
 
+
  const Findlocation = () => {
 
   const [Locdata, setlocdata] = useState(LocationData);
@@ -65,7 +69,7 @@ const LocationData = [
     <div className='Explore-properties '>
     <Layout className='Eplore-property find-locations white-bg-color'>
         <PageHeader className="site-page-header">
-                <h3 className='grey-heading'>Find By locations</h3>
+                <Title level={3}  className='grey-heading'>Find By locations</Title>
                 <p className='grey-title'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut et a integer eget. Viverra cursus dictumst phasellus odio dignissim pellentesque convallis phasellus sit.</p>
         </PageHeader>
         <div className='property-list-card card-top-space'>
@@ -76,8 +80,8 @@ const LocationData = [
                         const {image, title, subtitle, arrowimg } = curElem;
                                
                         return(
-                          <Col span={8} xs={24} lg={8}>
-                            <div className='explore-card find-location-card'>
+                          <Col span={8} xs={24} sm={12} lg={8}>
+                            <Card className='explore-card find-location-card'>
                               <figure>
                                  <img src={image} alt='' />
                               </figure>
@@ -87,12 +91,12 @@ const LocationData = [
                                     <img src={arrowimg} />
                                     </div> 
                                 <div className='explore-heading'>
-                                      <h5>{title}</h5>
+                                      <Title level={5} >{title}</Title>
                                       <h6>{subtitle}</h6>
                                  </div> 
                                 </div>
                                </div>
-                             </div>
+                             </Card>
                             </Col>
                         )
                        

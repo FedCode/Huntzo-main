@@ -22,7 +22,7 @@
     object-fit: cover;
 }
 
-.explore-body figure {
+.customer-card .explore-body figure {
     width: 90px;
     height: 90px;
     border-radius: 100%;

@@ -5,7 +5,29 @@ import facebookicon from '../../assets/images/facebook-logo1.svg';
 import twitericon from '../../assets/images/TwitterLogo.svg';
 import instagramicon from '../../assets/images/instagram-icon.svg';
 import './Topbar.css'
-import { Col, Row} from 'antd';
+import { Col, Row, List} from 'antd';
+
+const SocialMedia = [
+
+    {
+       id: 1,
+       socialicon: `${instagramicon}` 
+       
+    },
+    
+    {
+        id: 2,
+        socialicon: `${twitericon}` 
+     },
+
+     {
+        id: 3,
+        socialicon: `${facebookicon}` ,
+       
+     }
+
+]
+
 
  const Topbar = () => {
   return (
@@ -20,13 +42,12 @@ import { Col, Row} from 'antd';
                     </ul>
                 </div>
             </Col>
-            <Col span={12}>
+            <Col span={12} >
                 <div className='social-details'>
-                    <ul className='contact-list'>
-                        <li><a href='' ><img src={instagramicon} alt='facebook'/></a></li>
-                        <li><a href='' ><img src={twitericon} alt='facebook'/></a></li>
-                        <li><a href='' ><img src={facebookicon} alt='facebook'/></a></li>
-                    </ul>
+                   <List size="small" className='contact-list'
+                       dataSource={SocialMedia}
+                        renderItem={item => <List.Item ><a href='' ><img src={item.socialicon} /></a> </List.Item>}
+                     />
                 </div>
             </Col>
            </Row>

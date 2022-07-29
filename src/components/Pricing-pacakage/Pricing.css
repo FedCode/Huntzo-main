@@ -13,17 +13,17 @@
     text-align: center;
     padding: 2rem;
 }
-ul.feature-list {
+.ant-list-items {
     padding: 0;
     margin: 1rem 0;
 }
-ul.feature-list li {
+.price-body .ant-list-items li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px dashed #D9D9D9;;
     padding: 1rem 0;
 }
-ul.feature-list li:last-child {
+.ant-list-items li:last-child {
     border: 0;
 }
 .price-header h2 {
@@ -44,7 +44,7 @@ span.currency-symbol {
 .price-footer {
     text-align: center;
 }
-ul.feature-list li p {
+.price-body .ant-list-items li p {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;

@@ -10,6 +10,10 @@ import { Row, Col } from 'antd';
 import './Header.css';
 
 class Navbar extends Component {
+
+
+
+
 	state = {
 		current: 'mail',
 		visible: false

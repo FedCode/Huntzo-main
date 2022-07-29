@@ -3,6 +3,17 @@
 	padding: 1rem 0;
 }
 ul.contact-list {padding: 0;margin: 0;display: flex;}
+.social-details .ant-list-items {
+	display: flex;
+	justify-content: end;
+	margin: 0;
+}
+.social-details .ant-list-items li {
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 0;
+}
 .social-details ul.contact-list {justify-content: end;}
 .social-details ul.contact-list li{padding-left: 1.5rem; padding-right: 0;}
 ul.contact-list li {display: flex;padding-right: 1.5rem;align-items: center;}

@@ -4,8 +4,12 @@
 }
 .bg-light-color{background: #515C77; }
 .explore-card {
-    background: #fff;
-    border-radius: 8px;
+	background: #fff;
+	border-radius: 8px;
+	border: 0;
+}
+.explore-card .ant-card-body {
+	padding: 0;
 }
 .explore-card figure img {
     width: 100%;
@@ -142,10 +146,15 @@ ul.conetnt-listing li { margin-bottom: 0.6rem;}
 
 }
 
+@media (max-width:991px){
+.section-conatiner {
+	padding: 0 1rem;
+}
 
+}
 
 @media (max-width:767px){
-
+.explore-footer .view-btn {margin-top: 1rem;}
 .Eplore-property {padding: 1rem 0 1.5rem;}
 .ant-page-header-content h3 {font-weight: 500;font-size: 24px;}
 h3.white-heading, p.white-title {max-width: 100%;}
@@ -154,11 +163,15 @@ span.icon-bg { margin-right: 5px;}
 .explore-footer {padding: 1rem 1.5rem;margin: 1rem 0 0;align-items: baseline;flex-direction: column-reverse;}
 .explore-footer button.ant-btn.ant-btn-default.view-btn {margin-top: 1rem;}
 .browse-category { padding-top: 1.5rem;}
-.card-top-space {
-    padding-top: 1rem;
+.card-top-space {padding-top: 1rem;}
+.section-tbm-space {padding: 0.5rem 0  2rem;}
+ul.conetnt-listing li {display: block;margin-bottom: 1rem;margin-right:0;}
+
 }
 
-.section-tbm-space {
-    padding: 0.5rem 0  2rem;
-}
+@media (max-width:480px){
+.explore-footer .view-btn {margin-top: 1rem;}
+.explore-header {flex-direction: column;}
+.explore-footer {padding:0.5rem 1.5rem;margin: 0;}
+.expolore-price {margin: 0.5rem 0 0;}
 }

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './Review.css'
-import { PageHeader, Layout, Col, Row, Button, List } from 'antd';
+import { PageHeader, Layout, Col, Row, Card  } from 'antd';
 import propimg from '../../assets/images/properties-img.png' ;
 import stars from '../../assets/images/stars.svg' ;
+import { Typography } from 'antd';
+
 
 
 const CustomerData = [
@@ -38,14 +40,17 @@ const CustomerData = [
        }
 
 ]
- const Review = () => {
+
+const { Title } = Typography;
+
+const Review = () => {
 
 const [reviewData, setreviewData] = useState(CustomerData)
   return (
     <div className='customer-review '>
         <Layout className='bg-light-color section-tbm-space'>
             <PageHeader className="site-page-header">
-                <h3 className='white-heading'>good reviews by customers</h3>
+                <Title level={3} className='white-heading'>good reviews by customers</Title>
                 <p className='white-title'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut et a integer eget. Viverra cursus dictumst phasellus odio dignissim pellentesque convallis phasellus sit.</p>
             </PageHeader>
             <div className='customer-list-card card-top-space'>
@@ -55,8 +60,8 @@ const [reviewData, setreviewData] = useState(CustomerData)
                       reviewData.map((curElem) => {
                         //const {image, title, subtitle,  } = curElem;      
                         return(
-                          <Col span={8} xs={24} lg={8}>
-                            <div className='explore-card customer-card'>
+                          <Col span={8} xs={24} sm={12} lg={8}>
+                            <Card className='explore-card customer-card'>
                                <div className='explore-body'>
                                  <figure>
                                    <img src={curElem.csimage} alt='' />
@@ -64,7 +69,7 @@ const [reviewData, setreviewData] = useState(CustomerData)
                                  <div className='explore-header'>
                                       <div className='explore-heading'>
                                           <div className='review-title'>
-                                               <h5>{curElem.title}</h5>
+                                          <Title level={5}>{curElem.title}</Title>
                                                <h6>{curElem.subtitle}</h6>
                                           </div>
                                           <div className='star-img'>
@@ -77,7 +82,7 @@ const [reviewData, setreviewData] = useState(CustomerData)
                                     </div> 
                                   </div>
                                  </div>
-                             </div>
+                             </Card>
                             
                             
                             </Col>
