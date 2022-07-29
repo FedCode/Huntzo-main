@@ -168,7 +168,7 @@ export const Properties = () => {
                      
                   </Row>
                   <div className='browse-category'>
-                  <button className='browse-btn'>browese more properties</button>
+                  <Button className='browse-btn'>browese more properties</Button>
                   </div>
               </div>
            </div>
